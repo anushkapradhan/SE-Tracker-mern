@@ -58,3 +58,25 @@ export function chart_data(transaction, custom){
 export function getTotal(transaction){
     return _.sum(getSum(transaction));
 }
+
+export function getRemaining(transaction){
+    let total = getTotal(transaction);
+    
+    let amountSum = getSum(transaction, 'type');
+
+    // getting total expense only
+    let expenseArray = amountSum.find(obj => obj.type === 'Expenses');
+    let expenseAmt = expenseArray ? expenseArray.total : 0;
+
+    // getting total savings only
+    let savingsArray = amountSum.find(obj => obj.type === 'Savings');
+    let savingsAmt = savingsArray ? savingsArray.total : 0;
+
+    // gettinf total investment only
+    let investmentArray = amountSum.find(obj => obj.type === 'Investment');
+    let investmentAmt = investmentArray ? investmentArray.total : 0;
+
+    const total_remaining = total - expenseAmt;
+
+    return { total_remaining, savingsAmt, investmentAmt };
+}
