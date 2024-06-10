@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='mx-4 poppins-regular'>
     <div className='container mx-auto max-w-6xl text-center drop-shadow-lg text-gray-800'>
-    <h1 className='text-4xl py-8 mb-10 bg-slate-800 text-white rounded'>
+    <h1 className='text-4xl py-8 mb-10 bg-black text-white rounded'>
       Savings and Expense Tracker
     </h1>
     {/* grid columns */}

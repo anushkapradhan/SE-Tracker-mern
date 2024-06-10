@@ -35,7 +35,7 @@ export default function Form() {
                     <input type="text" {...register('amount')} placeholder="Amount" className="form-input" />
                 </div>
                 <div className="submit-btn">
-                    <button className="border py-2 text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none w-full">Make Transaction</button>
+                    <button className="border py-2 text-white bg-black hover:bg-blue-600 focus:outline-none w-full">Make Transaction</button>
                 </div>
             </div>
         </form>

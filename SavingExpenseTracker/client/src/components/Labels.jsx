@@ -28,7 +28,7 @@ function LabelComponent({ data }){
     return(
         <div className="labels flex justify-between">
             <div className="flex gap-2">
-                <div className="w-2 h-2 rounded py-3" style={{background: data.color ?? '#f9c74f'}}></div>
+                <div className="w-6 h-3 rounded-full py-3" style={{background: data.color ?? '#f9c74f'}}></div>
                 <h3 className="text-md">{data.type ?? ''}</h3>
             </div>
             <h3 className="font-bold">{Math.round(data.percent) ?? 0}%</h3>

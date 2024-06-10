@@ -43,6 +43,7 @@ export function chart_data(transaction, custom){
                 backgroundColor: bg,
                 hoverOffset: 4,
                 borderRadius: 30,
+                borderColor: "black",
                 spacing: 5
             }]
         },
