@@ -93,6 +93,8 @@
 
   --color-yellow: #f9c74f;
   --color-purple: #9d4edd;
+
+  @apply w-full
 }
 
 .bg-yellow{
@@ -117,7 +119,6 @@
 
 a {
   font-weight: 500;
-  color: black;
   text-decoration: inherit;
 }
 a:hover {
@@ -126,8 +127,7 @@ a:hover {
 
 body {
   place-items: center;
-  margin: 0 auto;
-  padding: 2rem;
+  
   text-align: center;
 }
 
@@ -163,4 +163,46 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+
+
+
+/* ThemeSwitch.css */
+.switch {
+  position: relative;
+  width: 55px;
+  height: 25px;
+  background-color: #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch .ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.switch.dark {
+  background-color: #333;
+}
+
+.ball.dark {
+  background-color: #333;
+}
+
+.switch.dark .ball {
+  transform: translateX(30px);
+}
+
+.switch.light .ball {
+  transform: translateX(2px);
 }
