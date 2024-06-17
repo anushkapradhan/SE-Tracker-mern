@@ -10,12 +10,13 @@ import Transactions from '../components/trackerDashboardComponents/Transactions'
 import Accounts from '../components/trackerDashboardComponents/Accounts';
 
 
-export default function TrackerDashboard
-() {
+export default function TrackerDashboard() {
+
   const theme = useStore((state) => state.theme);
+
   return (
     <main className={theme}>
-      <div className='w-full px-6 md:px-6 bg-white dark:bg-slate-900 rounded'>
+      <div className='w-full px-6 md:px-6 bg-white dark:bg-slate-900'>
        <NavBar />
        <div className='px-0 md:px-5 2xl:px-20'>
         <Info title='Dashboard' subTitle='Monitor your financial activities' />

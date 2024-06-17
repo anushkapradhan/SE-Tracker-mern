@@ -14,7 +14,7 @@ Chart.register(ArcElement);
 export default function Graph() {
     
     const { data, isFetching, isSuccess, isError } = api.useGetLabelsQuery();
-    // console.log(data);
+    console.log(data);
     //console.log(getSum(data));
 
     const { total_remaining, savingsAmt, investmentAmt } = getRemaining(data);
